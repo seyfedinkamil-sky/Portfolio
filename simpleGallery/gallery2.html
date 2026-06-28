@@ -1,0 +1,275 @@
+`   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Photo Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery-header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow:hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing:border-box;
+            border-radius:30px;
+           
+        }
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit:cover;
+            display: block;
+           
+        }
+        .gallery-caption {
+            position:relative;
+            background: cornflowerblue;
+            color: white;
+            padding: 10px;
+        }
+        .gallery-caption h3{
+            align-items: center;
+            font-weight: 400;
+        }
+        /* Responsive adjustments */
+         @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-header">
+        <h1>Responsive Photo Gallery</h1>
+        <p>Click on images to view larger version</p>
+    </div>
+
+    <div class="gallery">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <a href="#img1">
+                <img src="./yuluy (1).jpeg" alt="Nature 1" class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Beautiful Nature</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            </a>
+        </div>
+<!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <a href="#img2">
+                <img src="./yuluy (10).jpeg" alt="City 1" class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>the images of car</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            </a>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+            <a href="#img3">
+                <img src="./yuluy (11).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>laptop</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, magni.</p>
+            </div>
+            </a>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item">
+            <a href="#img4">
+                <img src="./yuluy (12).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Modern Architecture</h3>
+                <p>Contemporary building design</p>
+            </div>
+            </a>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item">
+            <a href="#img5">
+                <img src="./yuluy (13).jpeg" class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>products of apple compuny</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quaerat?</p>
+            </div>
+            </a>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (14).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>playstaion</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur incidunt mollitia fuga?</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 7 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (15).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>earpad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 8 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (16).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>car</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui aperiam cum repellendus!</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 9 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (2).jpeg" class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>car</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ut iusto quisquam.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 10 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (3).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>mobile</h3>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 11 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (4).jpeg" class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>desktop</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 12 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (5).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Mobeil</h3>
+                <p>Lorem, ipsum dolor.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 13 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (6).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Beautiful computer</h3>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 14 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (7).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Nucilar compuny</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 15 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (8).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Beautiful</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            </a>
+        </div>
+        <!-- Gallery Item 16 -->
+        <div class="gallery-item">
+            <a href="#img6">
+                <img src="./yuluy (9).jpeg"  class="gallery-image">
+            </a>
+            <div class="gallery-caption">
+                <h3>Duniya and deen</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        
+            </a>
+        </div>
+    </div>
+    <video src="./mov_bbb.mp4" video/mp4 ></video>
+</body>
+</html>
